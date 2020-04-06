@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Nnamani Emmanuel",
+    "mobile": "07060461403",
+    "level": "Lecturer I",
+    "description": "Senior lecturer",
+    "img_url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Beetroot_jm26647.jpg"
+  },
+  {
+    "id" : 2,
+    "name" : "Nnamani Emmanuel",
+    "mobile" : "07060461403",
+    "level" : "Senior Lecturer",
+    "description" : "Senior lecturer",
+    "img_url" : "https://upload.wikimedia.org/wikipedia/commons/2/29/Beetroot_jm26647.jpg"
+  },
+  {
+    "id" : 3,
+    "name" : "Nnamani Emmanuel",
+    "mobile" : "07060461403",
+    "level" : "Senior Lecturer",
+    "description" : "Senior Lecturer",
+    "img_url" : "https://upload.wikimedia.org/wikipedia/commons/2/29/Beetroot_jm26647.jpg"
+  },
+  {
+    "id" : 4,
+    "name" : "Nnamani Emmanuel",
+    "mobile" : "07060461403",
+    "level" : "Senior Lecturer",
+    "description" : "Senior lecturer",
+    "img_url" : "https://upload.wikimedia.org/wikipedia/commons/2/29/Beetroot_jm26647.jpg"
+  }
+]

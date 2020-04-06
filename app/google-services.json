@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "443071684296",
+    "firebase_url": "https://starterapi.firebaseio.com",
+    "project_id": "starterapi",
+    "storage_bucket": "starterapi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:443071684296:android:097ca136cd10773edccffd",
+        "android_client_info": {
+          "package_name": "com.words.nacoss"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "443071684296-3k3g0opbifccnvl1ke4olm6ivttdvd48.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.words.nacoss",
+            "certificate_hash": "d0e0620c3e76751f36424f6e77a038c486882cb6"
+          }
+        },
+        {
+          "client_id": "443071684296-bu0b3gl6s7pqpfar9v8dch44t98hc159.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjiZRNY_3igP7HFtbEMRDM2CDbDpOq_VU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "443071684296-bu0b3gl6s7pqpfar9v8dch44t98hc159.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

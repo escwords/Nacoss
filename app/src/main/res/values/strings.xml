@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Nacoss</string>
+    <string name="Level">Lecture I</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nacoss_icon">nacoss</string>
+    <string name="profile_icon">profile</string>
+    <string name="background">Background</string>
+    <string name="user_picture">navigation header</string>
+    <string name="copyright">\@Copyright 2020</string>
+</resources>

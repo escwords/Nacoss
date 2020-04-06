@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/secondaryColor</item>
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorPrimaryVariant">@color/secondaryColor</item>
+        <item name="colorSecondaryVariant">@color/secondaryDarkColor</item>
+        <item name="drawerArrowStyle">@style/customArrowStyle</item>
+        <item name="android:fontFamily">@font/fresca</item>
+        <item name="android:font">@font/fresca</item>
+
+        <!--<item name="colorWhite">@color_item/colorWhite</item>-->
+    </style>
+
+    <style name="customArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/secondaryDarkColor</item>
+    </style>
+</resources>

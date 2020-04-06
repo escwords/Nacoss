@@ -1,0 +1,129 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+apply plugin: 'androidx.navigation.safeargs.kotlin'
+
+apply plugin: 'com.google.gms.google-services'
+
+
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.words.nacoss"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    // work-runtime-ktx 2.1.0 and above now requires Java 8
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "androidx.appcompat:appcompat:$rootProject.appcompat_version"
+    implementation "androidx.core:core-ktx:$rootProject.core_version"
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    kapt "androidx.room:room-compiler:$room_version"
+    // For Kotlin use kapt instead of annotationProcessor
+    kapt "com.github.bumptech.glide:compiler:$rootProject.glide_version"
+
+
+    //constraintLayout dependencies
+    implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayoutVersion"
+
+    //viewModel, liveData  and lifeCycle dependencies
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$rootProject.lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$rootProject.lifecycle_version"
+
+    //Navigation dependencies
+    implementation "androidx.navigation:navigation-fragment-ktx:$rootProject.nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$rootProject.nav_version"
+
+    //Room dependencies
+    implementation "androidx.room:room-runtime:$rootProject.room_version"
+    implementation "androidx.room:room-ktx:$rootProject.room_version"
+
+    //work manager dependencies
+    implementation "androidx.work:work-runtime-ktx:$rootProject.work_version"
+
+    //gSon dependencies
+    implementation "com.google.code.gson:gson:$rootProject.gson_version"
+
+    //Material Component dependencies
+    implementation "com.google.android.material:material:$rootProject.material_component"
+
+    //glide dependencies
+    implementation "com.github.bumptech.glide:glide:$rootProject.glide_version"
+
+    //recyclerView dependencies
+    implementation "androidx.recyclerview:recyclerview:$rootProject.recyclerView_version"
+    //fragment dependencies
+    implementation "androidx.fragment:fragment-ktx:$rootProject.fragment_version"
+
+    //kotlin dependencies
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$rootProject.kotlin_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.coroutine_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$rootProject.coroutine_version"
+
+    //Timber
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+
+    //Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofit_version"
+    implementation "com.squareup.retrofit2:converter-moshi:$rootProject.retrofit_version"
+    implementation "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:$rootProject.retrofit_coroutines_adapter"
+
+    //Moshi
+    implementation "com.squareup.moshi:moshi:$rootProject.moshi_version"
+    implementation "com.squareup.moshi:moshi-kotlin:$rootProject.moshi_version"
+
+    //multiDex
+    implementation "androidx.multidex:multidex:$rootProject.multidex_version"
+
+
+    //Firebase
+    implementation "com.google.firebase:firebase-database-ktx:$rootProject.firebase_realTime_version"
+    implementation "com.google.firebase:firebase-firestore-ktx:$rootProject.firebase_fireStore"
+
+    //this implementation stopped the duplicated listenable future error
+    implementation 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
+
+
+
+    //Test dependencies
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+}
