@@ -1,46 +1,26 @@
 package com.words.nacoss.viewModel
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.*
 import com.words.nacoss.dataSource.Staff
 import com.words.nacoss.repository.MainRepository
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.Job
-import kotlinx.coroutines.launch
-import timber.log.Timber
+import kotlinx.coroutines.*
 
 class HomeViewModel (private val repository: MainRepository) : ViewModel(){
 
-    /**************************************************/
-    //Check This Code for Safety Sake( i.e encapsulation )
-    private val _staffList = MutableLiveData<List<Staff>>()
-    val staffList: LiveData<List<Staff>>
-            get() = _staffList
-
-    private val viewModelJob = Job()
-    private val uiScope = CoroutineScope(Dispatchers.Main + viewModelJob)
-
-    init {
-        getAllStaff()
+    //return the List of staffs from database
+    val staffList: LiveData<List<Staff>> = liveData {
+        emitSource(repository.getStaffs())
     }
 
-    private fun getAllStaff(){
+    private val uiScope = CoroutineScope(Dispatchers.IO + SupervisorJob())
+
+    init{
         uiScope.launch {
-            val listOfStaff : List<Staff> = repository.getStaffs()
-            val onlineStaffs: List<Staff> = repository.getOnlineStaffs()
-            Timber.i("staffOnLine data: $onlineStaffs")
-            _staffList.postValue(listOfStaff + onlineStaffs)
+            repository.getOnlineStaffs()
         }
     }
 
-    override fun onCleared() {
-        super.onCleared()
-        viewModelJob.cancel()
-    }
-
+    //factory for HomeViewModel
     companion object{
         class HomeViewModelFactory(private val repository: MainRepository) : ViewModelProvider.Factory{
             @Suppress("UNCHECKED_CAST")

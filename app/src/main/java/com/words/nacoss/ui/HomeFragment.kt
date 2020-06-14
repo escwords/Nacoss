@@ -41,7 +41,7 @@ class HomeFragment : Fragment() {
 
     //this function upload the adapter staffList
     private fun subscribeUi(adapter: StaffListAdapter) {
-        homeViewModel.staffList.observe(this , Observer { staffs ->
+        homeViewModel.staffList.observe(viewLifecycleOwner , Observer { staffs ->
            // Toast.makeText(this.context,"$staffs",Toast.LENGTH_LONG).show()
             adapter.submitList(staffs)
         })

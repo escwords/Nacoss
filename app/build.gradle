@@ -58,6 +58,9 @@ dependencies {
     // For Kotlin use kapt instead of annotationProcessor
     kapt "com.github.bumptech.glide:compiler:$rootProject.glide_version"
 
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0"
+
 
     //constraintLayout dependencies
     implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayoutVersion"

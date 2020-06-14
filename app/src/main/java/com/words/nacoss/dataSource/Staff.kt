@@ -8,17 +8,21 @@ import androidx.room.PrimaryKey
 data class Staff (
 
     @PrimaryKey
-    val id: Int,
+    val id: Int?,
 
-    val name: String,
+    val name: String?,
 
-    val mobile: String,
+    val mobile: String?,
 
-    val level: String,
+    val level: String?,
 
-    val description: String,
+    val email: String?,
 
-    val img_url: String
+    val description: String?,
+
+    val img_url: String?
 
 
 )
+
+

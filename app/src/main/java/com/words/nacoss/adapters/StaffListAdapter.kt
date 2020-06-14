@@ -51,7 +51,7 @@ class StaffListAdapter
             }
         private fun navigateToDetailScreen(view: View, staff: Staff) {
 
-            val directions = HomeFragmentDirections.actionHomeFragmentToDetailFragment(staff.id)
+            val directions = HomeFragmentDirections.actionHomeFragmentToDetailFragment(staff.id!!)
             view.findNavController().navigate(directions)
         }
 

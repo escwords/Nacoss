@@ -1,34 +1,38 @@
 [
   {
     "id": 1,
-    "name": "Nnamani Emmanuel",
-    "mobile": "07060461403",
-    "level": "Lecturer I",
-    "description": "Senior lecturer",
-    "img_url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Beetroot_jm26647.jpg"
+    "name": "Engr. Dr. Ebem Deborah Uzoamaka.",
+    "mobile": "08052810722",
+    "level": "Senior Lecturer",
+    "email": "deborah.ebem@unn.edu.ng",
+    "description": "Dr. Ir.Engr.(Mrs) Deborah Uzoamaka Ebem is a native of Ugbo in Awgu Local Government Area of Enugu State. She was one of the pioneer students of the Department of Computer Science and Engineering at the then Anambra State University of Technology (ASUTECH), Nigeria. She received a B.Engr.(Second class upper division  ,21) degree from ASUTECH and a postgraduate diploma in management from University of Nigeria, Nsukka. She also received master’s degrees in Computer Science and Engineering and Computer Engineering from Enugu State University of Science (ESUT) and the Technical University Delft, The Netherlands, respectively. She is a Dutch certified Engineer (Ir.).She further holds a PhD in Computer Science from Ebonyi State University, Abakaliki, Nigeria. At present, she is a Senior Lecturer in the department of Computer Science, University of Nigeria, Nsukka. From September, 2011 to December, 2011 she was a Research Fellow and Scholar at Massachusetts Institute of Technology, Cambridge USA.\n\nDr. Mrs. Ebem developed a mobile outdoor game for children while at Delft that is being commercialized. She is MIT Open Course Ware (OCW) and Google ambassadors.\n\nDr. (Mrs.) Ebem has published journal articles in both international and local journals. Deborah has published eight text books on Computer Technology for Nigerian secondary schools and for first year course introduction to computer science for colleges and higher institutions in Nigeria. The secondary school textbooks have been approved since 2006/2007 academic session for use in EnuguState. She is an apt teacher, having taught computer science and computer technology to different categories of people: primary, secondary tertiary and corporate organizations for two decades. ",
+    "img_url": "https://firebasestorage.googleapis.com/v0/b/starterapi.appspot.com/o/Nacoss%2Fstaffs_profiles%2FEbem_Deborah.jpg?alt=media&token=687501a9-3f95-4bcb-a7fa-45c5f337b9c3"
   },
   {
     "id" : 2,
-    "name" : "Nnamani Emmanuel",
-    "mobile" : "07060461403",
-    "level" : "Senior Lecturer",
-    "description" : "Senior lecturer",
-    "img_url" : "https://upload.wikimedia.org/wikipedia/commons/2/29/Beetroot_jm26647.jpg"
+    "name" : "Mr. Anichebe Gregory E",
+    "mobile" : "+2348034221718",
+    "level" : "Lecturer II",
+    "email" : "gregory.anichebe@unn.edu.ng",
+    "description" : "Mr. Gregory E. Anichebe obtained his Senior School certificate from St. John Cross Seminary, Nsukka. He went further in the academic ladder and obtained a BSc (Hons) in Computer Science from University of Nigeria, Nsukka. He added another feather to his academic cap by obtaining an MSc in Computer Science from the same University. He is currently undergoing his PhD studies in Computer Science in the same university. He is an Assistant Lecturer in the Department of Computer Science, UNN. He is married with two children.",
+    "img_url" : "https://firebasestorage.googleapis.com/v0/b/starterapi.appspot.com/o/Nacoss%2Fstaffs_profiles%2FAnichebe_Gregory.jpg?alt=media&token=9bf84dfc-f8c8-43b6-b9a1-89e25b33fd91"
   },
   {
     "id" : 3,
-    "name" : "Nnamani Emmanuel",
-    "mobile" : "07060461403",
-    "level" : "Senior Lecturer",
-    "description" : "Senior Lecturer",
-    "img_url" : "https://upload.wikimedia.org/wikipedia/commons/2/29/Beetroot_jm26647.jpg"
+    "name" : "A.Prof. Oguike Osondu Everestus",
+    "mobile" : "08035405100",
+    "level" : "A.Prof/reader",
+    "email": "osondu.oguike@unn.edu.ng",
+    "description" : "Oguike, Osondu Everestus is a native of Orji in Owerri North Local Government Area of Imo State. Nigeria. He attended the following schools, Orji Town Primary School, Orji Uratta, Owerri; Holy Ghost College, Owerri; University of Lagos, Lagos, Nigeria; Queen Mary and Westfield College, University of London and University of Nigeria, Nsukka. He obtained the following certificates, degrees and diploma, First School Leaving Certificate (1980), WAEC/GCE O’ Level (1985), B.Sc (Hons) Mathematics and Statistics (1990), PGD (Information Technology) and M.Sc (Information Technology (1991) and Ph.D (Mathematical Modelling and Computational Mathematics) in January 2018. While in school, he received the following academic awards/prizes, University of Lagos scholarship for the best students in 1987/88, best graduating student, Department of Mathematics, University of Lagos, Nigeria in 1988/89, ODA Shared Scholarship Scheme, Queen Mary and Westfield College, University of London in 1990/91. Though he has worked in the industry in Nigeria as Computer Programmer, he started his academic career in the University of Nigeria, Nsukka as Lecturer II in 1999. He has continued there, till date as an Associate Professor in Computer Science. His research outputs have been published in impact factor, international journals and conference proceedings. He has authored many books and book chapters. His research interest is in Mathematical Modelling of the Performance of Computer and Communication Systems.",
+    "img_url" : "https://firebasestorage.googleapis.com/v0/b/starterapi.appspot.com/o/Nacoss%2Fstaffs_profiles%2FOguike_Osondu.jpg?alt=media&token=271f9bc3-4d30-41a6-8ade-817da3137f9d"
   },
   {
     "id" : 4,
-    "name" : "Nnamani Emmanuel",
-    "mobile" : "07060461403",
+    "name" : "Dr. C.M. Okoronkwo",
+    "mobile" : "+2348037582339",
     "level" : "Senior Lecturer",
-    "description" : "Senior lecturer",
-    "img_url" : "https://upload.wikimedia.org/wikipedia/commons/2/29/Beetroot_jm26647.jpg"
+    "email": 	"matthew.okoronkwo@unn.edu.ng",
+    "description" : "********",
+    "img_url" : "https://firebasestorage.googleapis.com/v0/b/starterapi.appspot.com/o/Nacoss%2Fstaffs_profiles%2F800_Okoronkwo_Chukwuemeka.jpg?alt=media&token=a0dceaed-83bb-4cd7-8a0a-162e66d2c3c3"
   }
 ]

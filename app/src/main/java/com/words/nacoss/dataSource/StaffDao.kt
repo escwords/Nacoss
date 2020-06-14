@@ -10,12 +10,15 @@ import androidx.room.Query
 @Dao
 interface StaffDao {
 
-    @Query("SELECT *FROM staff_profiles")
-    suspend fun getAllStaff(): List<Staff>
+     @Query("SELECT *FROM staff_profiles")
+     fun getAllStaff(): LiveData<List<Staff>>
 
     @Query("SELECT *FROM staff_profiles WHERE :id = id")
-    suspend fun getStaff(id: Int): Staff
+    fun getStaff(id: Int): LiveData<Staff>
 
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
-    fun insertAll(staffs: List<Staff>)
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertAll(staffs: List<Staff>)
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insert(staff:Staff)
 }
